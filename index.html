@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Стажировка_8</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="modal">
+    <div class="modal-close-btn"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <h4 class="modal_zagolovok">Лента событий</h4>
+                <ul class="modal_spisok">
+                    <li class="modal_links"><a href="/">Важные объявления</a></li>
+                    <li class="modal_links"><a href="/">События Дирекции</a></li>
+                    <li class="modal_links"><a href="/">События вашего отдела</a></li>
+                    <li class="modal_links"><a href="/">Архив событий</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <h4 class="modal_zagolovok">Сотрудники Дирекции</h4>
+                <ul class="modal_spisok">
+                    <li class="modal_links"><a href="/">Все сотрудники</a></li>
+                    <li class="modal_links"><a href="/">Сотрудники вашего отдела</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <h4 class="modal_zagolovok">Справочная информация</h4>
+                <ul class="modal_spisok">
+                    <li class="modal_links"><a href="/">Как работать с порталом</a></li>
+                    <li class="modal_links"><a href="/">Структура Дирекции</a></li>
+                    <li class="modal_links"><a href="/">Вопрос-ответ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <h4 class="modal_zagolovok">База документов</h4>
+                <ul class="modal_spisok">
+                    <li class="modal_links"><a href="/">Документы Дирекции</a></li>
+                    <li class="modal_links"><a href="/">Документы вашего отдела</a></li>
+                    <li class="modal_links"><a href="/">Ваши персональные документы</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <h4 class="modal_zagolovok">График отпусков</h4>
+                <ul class="modal_spisok">
+                    <li class="modal_links"><a href="/">Производственный календарь</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="menu-left">
+    <ul class="menu">
+        <li class="menu_links">
+            <div class="sandvich">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </li>
+        <li class="menu_links">
+            <a href="/">
+                <img class="img_menu" src="img/kalendar.png" alt="">
+                <p class="text_menu">Лента событий</p>
+            </a>
+            <ul class="dropdown_menu">
+                <li class="dropdown_links"><a href="">Важные объявления</a></li>
+                <li class="dropdown_links"><a href="">События Дирекции</a></li>
+                <li class="dropdown_links"><a href="">События вашего отдела</a></li>
+            </ul>
+        </li>
+        <li class="menu_links">
+            <a href="/">
+                <img class="img_menu" src="img/sotrudniki.png" alt="">
+                <p class="text_menu">Сотрудники дирекции</p>
+            </a>
+            <ul class="dropdown_menu">
+                <li class="dropdown_links"><a href="">Все сотрудники Дирекции</a></li>
+                <li class="dropdown_links"><a href="">Сотрудники вашего отдела</a></li>
+            </ul>
+        </li>
+        <li class="menu_links">
+            <a href="/">
+                <img class="img_menu" src="img/documents.png" alt="">
+                <p class="text_menu">База документов</p>
+            </a>
+            <ul class="dropdown_menu">
+                <li class="dropdown_links"><a href="">Общии документы Дирекции</a></li>
+                <li class="dropdown_links"><a href="">Документы вашего отдела</a></li>
+                <li class="dropdown_links"><a href="">Персональные документы</a></li>
+            </ul>
+        </li>
+        <li class="menu_links">
+            <a href="/">
+                <img class="img_menu" src="img/otpusk.png" alt="">
+                <p class="text_menu">График отпусков</p>
+            </a>
+        </li>
+        <li class="menu_links">
+            <a href="/">
+                <img class="img_menu" src="img/proizvodstv.png" alt="">
+                <p class="text_menu">Производств календарь</p>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="header_menu">
+    <div class="container-fluid">
+        <div class="logo">
+            <a href="/"><img class="images" src="img/logo.png" alt=""></a>
+        </div>
+        <div class="search">
+            <form class="search_form" action="">
+                <input class="search_input" type="search" placeholder="Поиск по базам документов">
+                <button class="search_btn"><img class="search_img" src="img/lupa.png" alt=""></button>
+            </form>
+            <div class="dropdown">
+                <div class="search_group">
+                    По материалам <i class="glyphicon glyphicon-chevron-down"></i>
+                    <ul class="search_dropdown_menu">
+                        <div class="kvadrat"></div>
+                        <li class="search_links"><a href="/">По документам</a></li>
+                        <li class="search_links"><a href="/">По сотрудникам</a></li>
+                        <li class="search_links"><a href="/">По событиям</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="user_panel">
+            <div class="date_time">
+                <div class="time">
+                    13:35
+                </div>
+                <div class="date">
+                    10 июня 2016
+                </div>
+            </div>
+            <div class="user">
+                <img src="img/foto.png" alt="" class="img-circle">
+                <p class="user_name"><b>ПЕРМИНОВА</b><br> Ольга Александровна</p>
+                <div class="user_dropdown">
+                    <div class="kvadrat"></div>
+                    <ul class="user_dropdown_spisok">
+                        <li><a href="/">Изменить личные данные</a></li>
+                        <li><a href="/">Выйти из системы</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="announcement" type="button">
+                <img class="announcement_img" src="img/zvonok.png" alt="">
+                <p class="announcement_text">Объявления</p>
+                <div class="announcement_dropdown">
+                    <div class="kvadrat2"></div>
+                        <div class="header_announcement">
+                            <h3 class="announcement_zagolovok">Объявления</h3>
+                            <a class="announcement_link" href="/">Все объявления</a>
+                        </div>
+                    <div class="announcement_body">
+                            <p class="announcement_text2">Изменение внутренних номеров телефонов сотрудников ФГБНУ "Дирекция НТП"<br>
+                            15.11.2015</p>
+                            <p class="announcement_text2">Обращаем ваше внимание на то, что в понедельник 21.11.2015 г. в течении рабочего дня начнут действовать новые внутренние номера сотрудников ФГБНУ "Дирекции НТП".
+                                <br>15.11.2015</p>
+                            <p class="announcement_text2">О работе Дирекции НТП в период новогодних праздников <br>
+                            15.11.2015</p>
+                    </div>
+                </div>
+            </button>
+            <button class="help">
+                <img class="img_help" src="img/help.png" alt="">
+            </button>
+        </div>
+    </div>
+</div>
+<section>
+    <div class="container-fluid">
+        <div class="np-row">
+            <div class="col-xs-12">
+                <div class="welcom">
+                    <h1>Добро пожаловать,Ольга Александровна!</h1>
+                    <p>Вы находитесь в закрытом разделе сайта <a href="fcntp.com">fcntp.com</a>.Воспользуйтесь панелью <b>меню слева</b>
+                        для перехода в основные разделы системы.Самая актуальная информация расположена ниже. <br>
+                        Для знакомства с системой перейдите в раздел "Справочная информация"</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="contents">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="events">
+                            <h4 class="events_zagolovok">ВАЖНЫЕ ОБЪЯВЛЕНИЯ</h4>
+                            <ul class="bxslider">
+                                <li>
+                                    <div class="mCustomScrollbar" data-mcs-theme="dark">
+                                        <div class="content">
+                                            <div class="info">
+                                                <p><b>Изменение внутренних номеров телефонов сотрудников ФГБНУ "Дирекция НТП"</b>
+                                                </p>
+                                                <p>Обращаем Ваше внимание на то, что в понедельник 21.12.2015г. в течении рабочего дня начнут действовать внутренние
+                                                    номера сотрудников ФГБНУ "Дирекция НТП".
+                                                </p>
+                                                <p>Обновленный список телефонов сотрудников Секритариата и Отдела сопровождения проектов доступен по ссылке:
+                                                    <br>http://fcntp.ru/page.aspx?page=6
+                                                </p>
+                                                <p>15.12.2015</p>
+                                                <a href="/">События Дирекции</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="mCustomScrollbar" data-mcs-theme="dark">
+                                        <div class="content">
+                                            <div class="info">
+                                                <p><b>Изменение внутренних номеров телефонов сотрудников ФГБНУ "Дирекция НТП"</b>
+                                                </p>
+                                                <p>Обращаем Ваше внимание на то, что в понедельник 21.12.2015г. в течении рабочего дня начнут действовать внутренние
+                                                    номера сотрудников ФГБНУ "Дирекция НТП".
+                                                </p>
+                                                <p>Обновленный список телефонов сотрудников Секритариата и Отдела сопровождения проектов доступен по ссылке:
+                                                    <br>http://fcntp.ru/page.aspx?page=6
+                                                </p>
+                                                <p>15.12.2015</p>
+                                                <a href="/">События Дирекции</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="mCustomScrollbar" data-mcs-theme="dark">
+                                        <div class="content">
+                                            <div class="info">
+                                                <p><b>Изменение внутренних номеров телефонов сотрудников ФГБНУ "Дирекция НТП"</b>
+                                                </p>
+                                                <p>Обращаем Ваше внимание на то, что в понедельник 21.12.2015г. в течении рабочего дня начнут действовать внутренние
+                                                    номера сотрудников ФГБНУ "Дирекция НТП".
+                                                </p>
+                                                <p>Обновленный список телефонов сотрудников Секритариата и Отдела сопровождения проектов доступен по ссылке:
+                                                    <br>http://fcntp.ru/page.aspx?page=6
+                                                </p>
+                                                <p>15.12.2015</p>
+                                                <a href="/">События Дирекции</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="mCustomScrollbar" data-mcs-theme="dark">
+                                        <div class="content">
+                                            <div class="info">
+                                                <p><b>Изменение внутренних номеров телефонов сотрудников ФГБНУ "Дирекция НТП"</b>
+                                                </p>
+                                                <p>Обращаем Ваше внимание на то, что в понедельник 21.12.2015г. в течении рабочего дня начнут действовать внутренние
+                                                    номера сотрудников ФГБНУ "Дирекция НТП".
+                                                </p>
+                                                <p>Обновленный список телефонов сотрудников Секритариата и Отдела сопровождения проектов доступен по ссылке:
+                                                    <br>http://fcntp.ru/page.aspx?page=6
+                                                </p>
+                                                <p>15.12.2015</p>
+                                                <a href="/">События Дирекции</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="button" class="button_down">Все важные объявления</button>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="events">
+
+                            <h4 class="events_zagolovok">Обновеления в базе документов</h4>
+                            <button type="button" class="direct">Дирекция</button>
+                            <button type="button" class="otdel">Ваш отдел</button>
+                            <div class="mCustomScrollbar" data-mcs-theme="dark">
+                                <div class="content">
+                                    <div class="document_links">
+                                        <a href=""><div class="pdf"><img src="img/pdf.png" alt=""></div>Приказ Министерства науки и технологий Российской Федерациии от 26 октября 1998г. №197 "О
+                                            создании Дирекции федеральной целевой научно технической программы</a>
+                                        <div class="links_hover"><p class="links_date">11.06.2016</p><button type="button" class="button_size">426kb</button>
+                                            <button type="button" class="button_download">Скачать</button></div>
+                                    </div>
+                                    <div class="document_links">
+                                        <a href=""><div class="pdf"><img src="img/pdf.png" alt=""></div>Приказ Министерства науки и технологий Российской Федерациии от 26 октября 1998г. №197 "О
+                                            создании Дирекции федеральной целевой научно технической программы</a>
+                                        <div class="links_hover"><p class="links_date">11.06.2016</p><button type="button" class="button_size">426kb</button>
+                                            <button type="button" class="button_download">Скачать</button></div>
+                                    </div>
+                                    <div class="document_links">
+                                        <a href=""><div class="pdf"><img src="img/pdf.png" alt=""></div>Приказ Министерства науки и технологий Российской Федерациии от 26 октября 1998г. №197 "О
+                                            создании Дирекции федеральной целевой научно технической программы</a>
+                                        <div class="links_hover"><p class="links_date">11.06.2016</p><button type="button" class="button_size">426kb</button>
+                                            <button type="button" class="button_download">Скачать</button></div>
+                                    </div>
+                                    <div class="document_links">
+                                        <a href=""><div class="pdf"><img src="img/pdf.png" alt=""></div>Приказ Министерства науки и технологий Российской Федерациии от 26 октября 1998г. №197 "О
+                                            создании Дирекции федеральной целевой научно технической программы</a>
+                                        <div class="links_hover"><p class="links_date">11.06.2016</p><button type="button" class="button_size">426kb</button>
+                                            <button type="button" class="button_download">Скачать</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="button_down">Все документы Дирекции</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="events">
+                            <h4 class="events_zagolovok">Ваши документы</h4>
+                            <div class="mCustomScrollbar" data-mcs-theme="dark">
+                                <div class="content">
+                                    <div class="documents_links">
+                                        <a href=""><div class="pdfs"><img src="img/pdf.png" alt=""></div>Шаблон еженедельного отчета для руководителя</a>
+                                        <div class="links_hover"><p class="links_date">11.06.2016</p><button type="button" class="button_size">426kb</button>
+                                            <button type="button" class="button_download">Скачать</button></div>
+                                    </div>
+                                    <div class="documents_links">
+                                        <a href=""><div class="pdfs"><img src="img/pdf.png" alt=""></div>Шаблон ежемесячного отчета для руководителя</a>
+                                        <div class="links_hover"><p class="links_date">11.06.2016</p><button type="button" class="button_size">426kb</button>
+                                            <button type="button" class="button_download">Скачать</button></div>
+                                    </div>
+                                    <div class="documents_links">
+                                        <a href=""><div class="pdfs"><img src="img/pdf.png" alt=""></div>Бухгалтерский отчет от 02.06.2016(черновик)</a>
+                                        <div class="links_hover"><p class="links_date">11.06.2016</p><button type="button" class="button_size">426kb</button>
+                                            <button type="button" class="button_download">Скачать</button></div>
+                                    </div>
+                                    <div class="documents_links">
+                                        <a href=""><div class="pdfs"><img src="img/pdf.png" alt=""></div>Шаблон еженедельного отчета для руководителя</a>
+                                        <div class="links_hover"><p class="links_date">11.06.2016</p><button type="button" class="button_size">426kb</button>
+                                            <button type="button" class="button_download">Скачать</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="button_down">Ваши документы</button>
+                        <button type="button" class="button_add">Добавить документ +</button>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="events">
+                            <h4 class="events_zagolovok">Ближайшие события</h4>
+                            <ul class="bxslider">
+                                <li>
+                                    <div class="mCustomScrollbar" data-mcs-theme="dark">
+                                        <div class="content">
+                                            <div class="info2">
+                                                <p><b>Рабочее совещание по неупоугому рассеянию электронов</b></p>
+                                                <p>Петербургский институт ядерной физики им. Б.П.Константинова и Национальный исследовательский центр "Курчатовский
+                                                    институт" организуют серию рабочих совещаний по различным направлениям связанным с методами нейтронного рассеянияю</p>
+                                                <p>Тематика охватывает круг актуальных проблем.</p>
+                                                <a href="/">События дирекции</a>
+                                                <div class="info_date">
+                                                    <div class="info_date_up">
+                                                        С 30 <br> сентября
+                                                    </div>
+                                                    <div class="info_date_down">
+                                                        по 2 <br>октября
+                                                    </div>
+                                                    <div class="kvadratik"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="mCustomScrollbar" data-mcs-theme="dark">
+                                        <div class="content">
+                                            <div class="info2">
+                                                <p><b>Рабочее совещание по неупоугому рассеянию электронов</b></p>
+                                                <p>Петербургский институт ядерной физики им. Б.П.Константинова и Национальный исследовательский центр "Курчатовский
+                                                    институт" организуют серию рабочих совещаний по различным направлениям связанным с методами нейтронного рассеянияю</p>
+                                                <p>Тематика охватывает круг актуальных проблем.</p>
+                                                <a href="/">События дирекции</a>
+                                                <div class="info_date">
+                                                    <div class="info_date_up">
+                                                        С 30 <br> сентября
+                                                    </div>
+                                                    <div class="info_date_down">
+                                                        по 2 <br>октября
+                                                    </div>
+                                                    <div class="kvadratik"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="mCustomScrollbar" data-mcs-theme="dark">
+                                        <div class="content">
+                                            <div class="info2">
+                                                <p><b>Рабочее совещание по неупоугому рассеянию электронов</b></p>
+                                                <p>Петербургский институт ядерной физики им. Б.П.Константинова и Национальный исследовательский центр "Курчатовский
+                                                    институт" организуют серию рабочих совещаний по различным направлениям связанным с методами нейтронного рассеянияю</p>
+                                                <p>Тематика охватывает круг актуальных проблем.</p>
+                                                <a href="/">События дирекции</a>
+                                                <div class="info_date">
+                                                    <div class="info_date_up">
+                                                        С 30 <br> сентября
+                                                    </div>
+                                                    <div class="info_date_down">
+                                                        по 2 <br>октября
+                                                    </div>
+                                                    <div class="kvadratik"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="mCustomScrollbar" data-mcs-theme="dark">
+                                        <div class="content">
+                                            <div class="info2">
+                                                <p><b>Рабочее совещание по неупоугому рассеянию электронов</b></p>
+                                                <p>Петербургский институт ядерной физики им. Б.П.Константинова и Национальный исследовательский центр "Курчатовский
+                                                    институт" организуют серию рабочих совещаний по различным направлениям связанным с методами нейтронного рассеянияю</p>
+                                                <p>Тематика охватывает круг актуальных проблем.</p>
+                                                <a href="/">События дирекции</a>
+                                                <div class="info_date">
+                                                    <div class="info_date_up">
+                                                        С 30 <br> сентября
+                                                    </div>
+                                                    <div class="info_date_down">
+                                                        по 2 <br>октября
+                                                    </div>
+                                                    <div class="kvadratik"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="events">
+                            <h4 class="events_zagolovok">Лента событий</h4>
+                            <div class="mCustomScrollbar" data-mcs-theme="dark">
+                                <div class="content">
+                                    <div class="events_link">
+                                        <div class="events_date">
+                                            <div class="date_day">
+                                                с 30 сент.
+                                            </div>
+                                            <div class="date_mounth">
+                                                по 12 окт.
+                                            </div>
+                                        </div>
+                                        || Всероссийский научный форум молодых ученых "Наука будущего-наука молодых"<br>
+                                        <a href="/">События Дирекции</a>
+                                    </div>
+                                    <div class="events_link">
+                                        <div class="events_date">
+                                            <div class="date_day">
+                                                с 10 июля
+                                            </div>
+                                            <div class="date_mounth">
+                                                по 20 авг.
+                                            </div>
+                                        </div>
+                                        Конференция "Аутоимунные и иммунодефицитные заболевания"<br>
+                                        <a href="/">События вашего отдела </a>
+                                    </div>
+                                    <div class="events_link">
+                                        <div class="events_date">
+                                            <div class="date_day">
+                                                2-4
+                                            </div>
+                                            <div class="date_mounth">
+                                                мая
+                                            </div>
+                                        </div>
+                                        Итоги реализации в 2015 году ПНИЭР по приоритетным направлениям в рамках ФЦП<br>
+                                        <a href="/">События Дирекции</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="button_down">Все события</button>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="events">
+                            <h4 class="events_zagolovok">Новости</h4>
+                            <div class="mCustomScrollbar" data-mcs-theme="dark">
+                                <div class="content">
+                                    <div class="new_links">
+                                        <a href="/">Объявление о проведении открытого конкурса на право получения лецензионного доступа к полнотестовым международным базам данных
+                                            <br>15.06.2016</a>
+                                    </div>
+                                    <div class="new_links">
+                                        <a href="/">Научно-практическая конференция по итогам реализации в 2015 году прикладных научных исследований и экспериментальных разработок...
+                                            <br>15.06.2016</a>
+                                    </div>
+                                    <div class="new_links">
+                                        <a href="/">Консультационные семинары по вопросам отчетной документации (поэтапной и ежеквартальной) по...
+                                            <br>15.06.2016</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="button_down">Все новости</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/js.js"></script>
+</body>
+</html>
